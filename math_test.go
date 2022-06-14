@@ -19,8 +19,8 @@ func TestSub(t *testing.T) {
 }
 
 func TestMult(t *testing.T) {
-	esperado := 30
-	total := mult(10, 3)
+	esperado := 40
+	total := mult(10, 4)
 	if total != esperado {
 		t.Errorf("Resultado da multiplicação de 10*2 é inválido. Resultado %d. Esperado %d", total, esperado)
 	}
