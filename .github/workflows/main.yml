@@ -55,4 +55,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: trantordocker/fc-3.0-ci-go:latest
+          tags: trantordocker/fc-3.0-ci-go-sonar:latest
