@@ -21,7 +21,7 @@ jobs:
       - run: go run math.go
 
       # 0) Setup do ambiente SonarQube
-      # - run: go test -coverprofile=coverage.out
+      - run: go test -coverprofile=coverage.out
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
