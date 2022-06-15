@@ -22,12 +22,12 @@ jobs:
 
       # 0) Setup do ambiente SonarQube
       - run: go test -coverprofile=coverage.out
-      # - name: SonarCloud Scan
-      #   uses: SonarSource/sonarcloud-github-action@master
-      #   env:
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-      #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      #     SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: sqp_590a9ab51c10c280705e5f106c4ce57686a139a3
+          SONAR_HOST_URL: http://localhost:9000
 
       # - name: SonarCloud Quality Gate
       #   uses: sonarsource/sonarqube-quality-gate-action@master
