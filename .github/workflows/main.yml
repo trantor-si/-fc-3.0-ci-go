@@ -20,8 +20,8 @@ jobs:
         with:
           go-version: 1.15
 
-      - run: go test
-      - run: go run math.go
+      # - run: go test
+      # - run: go run math.go
 
       # 0) Setup do ambiente SonarQube
       - run: go test -coverprofile=coverage.out
