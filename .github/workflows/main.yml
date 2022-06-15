@@ -3,7 +3,11 @@ on:
   push:
     branches:
       - develop
+  pull_request:
+    types: [opened, synchronize, reopened]
+
 jobs:
+  sonarcloud:
   check-application:
     runs-on: ubuntu-latest
     steps:
@@ -25,9 +29,9 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: sqp_590a9ab51c10c280705e5f106c4ce57686a139a3
-          SONAR_HOST_URL: http://localhost:9000
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          # SONAR_HOST_URL: http://sonarcloud.io
 
       # - name: SonarCloud Quality Gate
       #   uses: sonarsource/sonarqube-quality-gate-action@master
