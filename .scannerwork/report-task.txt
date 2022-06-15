@@ -1,6 +1,6 @@
-projectKey=go-sonar-project
+projectKey=go-project
 serverUrl=http://localhost:9000
-serverVersion=9.4.0.54424
-dashboardUrl=http://localhost:9000/dashboard?id=go-sonar-project
-ceTaskId=AYFiFpsxkOiG3M0Cp4GM
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYFiFpsxkOiG3M0Cp4GM
+serverVersion=9.5.0.56709
+dashboardUrl=http://localhost:9000/dashboard?id=go-project
+ceTaskId=AYFlaX-uW5_L59vPrWPY
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYFlaX-uW5_L59vPrWPY
