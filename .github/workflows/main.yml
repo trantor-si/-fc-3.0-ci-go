@@ -7,7 +7,6 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  sonarcloud:
   check-application:
     runs-on: ubuntu-latest
     steps:
