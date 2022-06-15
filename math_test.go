@@ -12,7 +12,7 @@ func TestSum(t *testing.T) {
 
 func TestSub(t *testing.T) {
 	esperado := 15
-	total := sub(30, 15)
+	total := sub(31, 15)
 	if total != esperado {
 		t.Errorf("Resultado da subtração de 30-15 é inválido. Resultado %d. Esperado %d", total, esperado)
 	}
